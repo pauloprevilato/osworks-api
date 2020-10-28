@@ -19,11 +19,17 @@
 	</properties>
 
 	<dependencies>
+	<!-- dependencia do content para gerar arquivos xml -->
+	<dependency>
+		<groupId>com.fasterxml.jackson.dataformat</groupId>
+		<artifactId>jackson-dataformat-xml</artifactId>
+	</dependency>
+	<!-- dependencia do spring boot web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+<!-- dependencia do junit para teste -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -34,6 +40,28 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<!-- dependencia do dev tools para ferramentas de teste rapido -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<!-- dependencia do JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<!-- dependencia do driver do Postgres -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
